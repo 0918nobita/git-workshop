@@ -10,7 +10,7 @@ script:
   - '[ "$TRAVIS_BRANCH" == master ] && [ "$TRAVIS_PULL_REQUEST" == "false" ] && bash ./deploy.sh'
 
 before_install:
-  - openssl aes-256-cbc -K $encrypted_6a56805a113e_key -iv $encrypted_6a56805a113e_iv -in deploy_key.enc -out deploy_key -d
+  - openssl aes-256-cbc -K $encrypted_48b9bd040511_key -iv $encrypted_48b9bd040511_iv -in deploy_key.enc -out deploy_key -d
   - chmod 600 deploy_key
   - eval `ssh-agent -s`
   - ssh-add deploy_key
