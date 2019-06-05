@@ -1,0 +1,5 @@
+node_modules
+_book
+*.pdf
+deploy_key
+deploy_key.pub
