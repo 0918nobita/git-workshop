@@ -2,6 +2,8 @@
 
 ## ローカルでリポジトリを作成する
 
+【やること1】以下のコマンドを実行して、ローカルにリポジトリを作成してください。
+
 ```bash
 $ mkdir practice-repo
 $ cd practice-repo
