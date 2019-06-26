@@ -15,8 +15,9 @@
 * git / GitHub の基礎知識
 * ハンズオン初級編 (必須)
   * [リポジトリの作成](1-init-repo.md)
-  * [リモートリポジトリの作成](2-prepare-remote.md)
-  * [コミット](3-commit.md)
+  * [コミット](2-commit.md)
+  * [リモートリポジトリの作成](3-prepare-remote.md)
+  * [SSH 鍵の生成・登録](4-ssh-keygen.md)
   * ブランチの作成 / チェックアウト
   * リモートリポジトリの作成
   * プッシュ
