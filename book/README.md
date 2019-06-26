@@ -15,7 +15,7 @@
 * [git の基礎知識](1-basics.md)
 * ハンズオン初級編 (必須)
   * [リポジトリの作成](2-init-repo.md)
-  * [コミット](3-commit.md)
+  * [ステージ / コミット](3-commit.md)
   * [リモートリポジトリの作成](4-prepare-remote.md)
   * [SSH 鍵の生成・登録](5-ssh-keygen.md)
   * ブランチの作成 / チェックアウト
