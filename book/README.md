@@ -13,12 +13,13 @@
 
 * 環境構築の確認
 * [git の基礎知識](1-basics.md)
+* [git の初期設定](2-initial-settings.md)
 * ハンズオン初級編 (必須)
-  * [リポジトリの作成](2-init-repo.md)
-  * [ステージ / コミット](3-commit.md)
-  * [Bitbucket にサインインする](4-signin-bitbucket.md)
-  * [SSH 鍵の生成・登録](5-ssh-keygen.md)
-  * [リモートリポジトリの作成](6-prepare-remote.md)
+  * [リポジトリの作成](3-init-repo.md)
+  * [ステージ / コミット](4-commit.md)
+  * [Bitbucket にサインインする](5-signin-bitbucket.md)
+  * [SSH 鍵の生成・登録](6-ssh-keygen.md)
+  * [リモートリポジトリの作成](7-prepare-remote.md)
   * ブランチの作成 / チェックアウト
   * リモートリポジトリの作成
   * プッシュ
