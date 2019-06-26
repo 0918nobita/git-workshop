@@ -2,19 +2,21 @@
 
 自分の環境にあわせて git 導入作業を済ませてください。
 
-* [Windows](#Windows)
-* [macOS](#macOS)
-* Linux
-  * [Ubuntu](#Ubuntu)
-  * [Arch linux](#Arch-linux)
+### Windows
 
-## Windows
+[公式サイト](https://git-scm.com/) から入手したインストーラで導入できます。
 
-[公式サイト](https://git-scm.com/) から入手したインストーラで導入できる
+### macOS
 
-## macOS
+ターミナル上で
 
-## Linux
+```bash
+git --version
+```
+
+を実行してバージョン情報が出力されたなら git 導入作業は完了しています。
+
+完了していない場合は「"git"コマンドを実行するには、コマンドライン・デベロッパ・ツールが必要です」というポップアップが表示されるので、「インストール」ボタンをクリックして画面の指示に従ってください。
 
 ### Ubuntu
 
