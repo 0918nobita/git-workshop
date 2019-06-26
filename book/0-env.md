@@ -18,4 +18,13 @@
 
 ### Ubuntu
 
+```bash
+sudo apt install git
+```
+
 ### Arch linux
+
+```bash
+sudo pacman -Syy
+sudo pacman -S git
+```
