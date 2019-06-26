@@ -2,7 +2,8 @@
 
 * [はじめに](README.md)
 * [環境構築](0-env.md)
-* [リポジトリの作成](1-init-repo.md)
-* [コミット](2-commit.md)
-* [リモートリポジトリの作成](3-prepare-remote.md)
-* [SSH 鍵の生成・登録](4-ssh-keygen.md)
+* [git の基礎知識](1-basics.md)
+* [リポジトリの作成](2-init-repo.md)
+* [コミット](3-commit.md)
+* [リモートリポジトリの作成](4-prepare-remote.md)
+* [SSH 鍵の生成・登録](5-ssh-keygen.md)

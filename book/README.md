@@ -12,12 +12,12 @@
 実際に番号順に git を操作して動作を確かめるようにしてください。
 
 * 環境構築の確認
-* git / GitHub の基礎知識
+* [git の基礎知識](1-basics.md)
 * ハンズオン初級編 (必須)
-  * [リポジトリの作成](1-init-repo.md)
-  * [コミット](2-commit.md)
-  * [リモートリポジトリの作成](3-prepare-remote.md)
-  * [SSH 鍵の生成・登録](4-ssh-keygen.md)
+  * [リポジトリの作成](2-init-repo.md)
+  * [コミット](3-commit.md)
+  * [リモートリポジトリの作成](4-prepare-remote.md)
+  * [SSH 鍵の生成・登録](5-ssh-keygen.md)
   * ブランチの作成 / チェックアウト
   * リモートリポジトリの作成
   * プッシュ
