@@ -16,8 +16,9 @@
 * ハンズオン初級編 (必須)
   * [リポジトリの作成](2-init-repo.md)
   * [ステージ / コミット](3-commit.md)
-  * [SSH 鍵の生成・登録](4-ssh-keygen.md)
-  * [リモートリポジトリの作成](5-prepare-remote.md)
+  * [Bitbucket にサインインする](4-signin-bitbucket.md)
+  * [SSH 鍵の生成・登録](5-ssh-keygen.md)
+  * [リモートリポジトリの作成](6-prepare-remote.md)
   * ブランチの作成 / チェックアウト
   * リモートリポジトリの作成
   * プッシュ
