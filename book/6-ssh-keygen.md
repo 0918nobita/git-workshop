@@ -15,9 +15,23 @@ $ c:/git/bin/ssh-keygen -t rsa
 Generating public/private rsa key pair.
 Enter file in which to save the key (/c/Users/[ユーザー名]/.ssh/id_rsa): <そのままEnterキーを押す>
 Enter passphrase (empty for no passphrase): <パスワードを考えて入力する>
-Enter same passphrase again: <確認でもう1度パスワードを入力する>
+Enter same passphrase again: <もう1度パスワードを入力する>
 Your identification has been saved in c:/Users/[ユーザー名]/.ssh/id_rsa.
 Your public key has been saved in c:/Users/[ユーザー名]/.ssh/id_rsa.pub.
+The key fingerprint is:
+~~~~
+```
+
+#### macOS / Linux
+
+```bash
+$ ssh-keygen -t rsa
+Generating public/private rsa key pair.
+Enter file in which to save the key (/Users/[ユーザー名]/.ssh/id_rsa): <そのままEnterキーを押す>
+Enter passphrase (empty for no passphrase): <パスワードを考えて入力する>
+Enter same passphrase again: <もう1度パスワードを入力する>
+Your identification has been saved in /Users/[ユーザー名]/.ssh/id_rsa.
+Your public key has been saved in /Users/[ユーザー名]/.ssh/id_rsa.pub.
 The key fingerprint is:
 ~~~~
 ```
