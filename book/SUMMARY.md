@@ -6,6 +6,5 @@
 * [git の初期設定](2-initial-settings.md)
 * [リポジトリの作成](3-init-repo.md)
 * [ステージ / コミット](4-commit.md)
-* [Bitbucket にサインインする](5-signin-bitbucket.md)
 * [SSH 鍵の生成・登録](6-ssh-keygen.md)
 * [リモートリポジトリの作成](7-prepare-remote.md)
