@@ -14,21 +14,20 @@
 * 環境構築の確認
 * [git の基礎知識](1-basics.md)
 * [git の初期設定](2-initial-settings.md)
-* ハンズオン初級編 (必須)
-  * [リポジトリの作成](3-init-repo.md)
-  * [ステージ / コミット](4-commit.md)
-  * [SSH 鍵の生成・登録](6-ssh-keygen.md)
-  * [リモートリポジトリの作成](7-prepare-remote.md)
-  * ブランチの作成 / チェックアウト
-  * リモートリポジトリの作成
-  * プッシュ
-  * フェッチ / マージ / プル
-  * プルリクエスト / マージ
-* ハンズオン中級編 (任意)
-  * イシューを立ててみる
-  * `.gitignore` を使ってみる
-* ハンズオン上級編 (任意)
-  * フォークする
-  * フォーク先リポジトリ から フォーク元リポジトリ にプルリクを投げる
-  * フォーク先リポジトリに、フォーク元リポジトリでの変更を反映する
-  * スカッシュして複数のコミットをひとつにまとめる
+* [リポジトリの作成](3-init-repo.md)
+* [ステージ / コミット](4-commit.md)
+* [SSH 鍵の生成・登録](6-ssh-keygen.md)
+* [リモートリポジトリの作成](7-prepare-remote.md)
+* [プッシュ](8-push.md)
+* [クローン](9-clone.md)
+* [ブランチとチェックアウト](10-branch.md)
+* [マージリクエスト / マージ](11-merge.md)
+* [イシュー](12-issue.md)
+* [総会文書](13-soukai.md)
+
+### 余裕のある人向け
+
+* `.gitignore` を用いて、特定のファイル/ディレクトリを管理対象から外す https://qiita.com/inabe49/items/16ee3d9d1ce68daa9fff
+* ``git add -p`` コマンドで部分的にコミットする https://qiita.com/cotton_desu/items/bf08ac57d59b37dd5188
+* ``git rebase -i`` コマンドで複数のコミットをまとめる https://qiita.com/tatetate55/items/7a822a3246df79d693b8
+* ``git stash`` コマンドで変更差分をコミットせずに一時退避する https://qiita.com/keisuke0508/items/4ad7caf544b1ad631fd7
