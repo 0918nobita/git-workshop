@@ -2,7 +2,7 @@
 
 **【やること8】** 以下の手順でリモートリポジトリを作成してください。
 
-https://gitlab.com/projects/new
+https://gitlab.com/projects/new ← このページを開いてください
 
 ![リポジトリの新規作成画面](./media/new-repo.jpg)
 
