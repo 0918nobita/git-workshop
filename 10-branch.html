@@ -1,0 +1,424 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>ブランチとチェックアウト · RCC Git 勉強会 2019</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="松本幸大">
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="11-merge.html" />
+    
+    
+    <link rel="prev" href="9-clone.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    はじめに
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="0-env.html">
+            
+                <a href="0-env.html">
+            
+                    
+                    環境構築
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="1-basics.html">
+            
+                <a href="1-basics.html">
+            
+                    
+                    git の基礎知識
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="2-initial-settings.html">
+            
+                <a href="2-initial-settings.html">
+            
+                    
+                    git の初期設定
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="3-init-repo.html">
+            
+                <a href="3-init-repo.html">
+            
+                    
+                    リポジトリの作成
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="4-commit.html">
+            
+                <a href="4-commit.html">
+            
+                    
+                    ステージ / コミット
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="6-ssh-keygen.html">
+            
+                <a href="6-ssh-keygen.html">
+            
+                    
+                    SSH 鍵の生成・登録
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="7-prepare-remote.html">
+            
+                <a href="7-prepare-remote.html">
+            
+                    
+                    リモートリポジトリの作成・登録
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="8-push.html">
+            
+                <a href="8-push.html">
+            
+                    
+                    プッシュ
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="9-clone.html">
+            
+                <a href="9-clone.html">
+            
+                    
+                    クローン
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.11" data-path="10-branch.html">
+            
+                <a href="10-branch.html">
+            
+                    
+                    ブランチとチェックアウト
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="11-merge.html">
+            
+                <a href="11-merge.html">
+            
+                    
+                    マージリクエスト / マージ
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="12-issue.html">
+            
+                <a href="12-issue.html">
+            
+                    
+                    イシュー
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="13-soukai.html">
+            
+                <a href="13-soukai.html">
+            
+                    
+                    総会文章
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >ブランチとチェックアウト</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="&#x30D6;&#x30E9;&#x30F3;&#x30C1;&#x3068;&#x30C1;&#x30A7;&#x30C3;&#x30AF;&#x30A2;&#x30A6;&#x30C8;">&#x30D6;&#x30E9;&#x30F3;&#x30C1;&#x3068;&#x30C1;&#x30A7;&#x30C3;&#x30AF;&#x30A2;&#x30A6;&#x30C8;</h1>
+<p>&#x8907;&#x6570;&#x4EBA;&#x3067;&#x540C;&#x6642;&#x306B;&#x6A5F;&#x80FD;&#x8FFD;&#x52A0;&#x3092;&#x884C;&#x3063;&#x305F;&#x308A;&#x3001;&#x30D0;&#x30B0;&#x4FEE;&#x6B63;&#x3092;&#x884C;&#x3063;&#x305F;&#x308A;&#x3059;&#x308B;&#x5834;&#x5408;&#x306B;&#x3001;&#x5C65;&#x6B74;&#x306E;&#x6D41;&#x308C;&#x3092;&#x5206;&#x5C90;&#x3057;&#x3066;&#x8A18;&#x9332;&#x3057;&#x3066;&#x3044;&#x3051;&#x308B; <strong>&#x30D6;&#x30E9;&#x30F3;&#x30C1;</strong> &#x6A5F;&#x80FD;&#x304C;&#x4FBF;&#x5229;&#x3067;&#x3059;&#x3002;</p>
+<p><strong>&#x3010;&#x3084;&#x308B;&#x3053;&#x3068;13&#x3011;</strong> <code>git branch</code> &#x30B3;&#x30DE;&#x30F3;&#x30C9;&#x3067;&#x3001;&#x4ECA;&#x5B58;&#x5728;&#x3057;&#x3066;&#x3044;&#x308B;&#x30D6;&#x30E9;&#x30F3;&#x30C1;&#x3092;&#x78BA;&#x8A8D;&#x3057;&#x3066;&#x304F;&#x3060;&#x3055;&#x3044;&#x3002;</p>
+<pre><code class="lang-bash">git branch
+* master
+...
+</code></pre>
+<p>&#x4ECA;&#x9078;&#x629E;&#x3055;&#x308C;&#x3066;&#x3044;&#x308B;&#x30D6;&#x30E9;&#x30F3;&#x30C1;&#x306B;&#x5BFE;&#x3057;&#x3066; <code>*</code> &#x304C;&#x8868;&#x793A;&#x3055;&#x308C;&#x3066;&#x3044;&#x307E;&#x3059;&#x3002;</p>
+<p>&#x3053;&#x306E;&#x3088;&#x3046;&#x306B;&#x3001;&#x30C7;&#x30D5;&#x30A9;&#x30EB;&#x30C8;&#x3067;&#x306F; <code>master</code> &#x30D6;&#x30E9;&#x30F3;&#x30C1;&#x306B;&#x8A18;&#x9332;&#x3055;&#x308C;&#x3066;&#x3044;&#x304F;&#x3088;&#x3046;&#x306B;&#x306A;&#x3063;&#x3066;&#x3044;&#x307E;&#x3059;&#x3002;</p>
+<p>&#x3053;&#x3053;&#x304B;&#x3089;&#x30D6;&#x30E9;&#x30F3;&#x30C1;&#x3092;&#x65B0;&#x898F;&#x4F5C;&#x6210;&#x3057;&#x3066;&#x3001;&#x30D6;&#x30E9;&#x30F3;&#x30C1;&#x304B;&#x3089;&#x30D6;&#x30E9;&#x30F3;&#x30C1;&#x3092;&#x79FB;&#x52D5;&#x3059;&#x308B; <strong>&#x30C1;&#x30A7;&#x30C3;&#x30AF;&#x30A2;&#x30A6;&#x30C8;</strong> &#x6A5F;&#x80FD;&#x3092;&#x4F7F;&#x3063;&#x3066;&#x3044;&#x304D;&#x307E;&#x3059;&#x3002;</p>
+<p><strong>&#x3010;&#x3084;&#x308B;&#x3053;&#x3068;14&#x3011;</strong> &#x4EE5;&#x4E0B;&#x306E;&#x30B3;&#x30DE;&#x30F3;&#x30C9;&#x3092;&#x5B9F;&#x884C;&#x3057;&#x3066;&#x3001;&#x30D6;&#x30E9;&#x30F3;&#x30C1;&#x3092;&#x65B0;&#x898F;&#x4F5C;&#x6210;&#x3057;&#x3066;&#x304F;&#x3060;&#x3055;&#x3044;&#x3002;</p>
+<pre><code class="lang-bash">git branch &lt;&#x30D6;&#x30E9;&#x30F3;&#x30C1;&#x540D;&gt;
+git branch  <span class="hljs-comment"># &#x4F5C;&#x6210;&#x3055;&#x308C;&#x3066;&#x3044;&#x308B;&#x304B;&#x78BA;&#x8A8D;</span>
+</code></pre>
+<p><code>&lt;&#x30D6;&#x30E9;&#x30F3;&#x30C1;&#x540D;&gt;</code> &#x306E;&#x90E8;&#x5206;&#x306B;&#x306F;&#x3001;&#x4ED6;&#x306E;&#x4EBA;&#x3068;&#x88AB;&#x308A;&#x305D;&#x3046;&#x306B;&#x306A;&#x3044;&#x540D;&#x524D;&#x3092;&#x6307;&#x5B9A;&#x3057;&#x3066;&#x304F;&#x3060;&#x3055;&#x3044;&#x3002;</p>
+<p><strong>&#x3010;&#x3084;&#x308B;&#x3053;&#x3068;15&#x3011;</strong> &#x4EE5;&#x4E0B;&#x306E;&#x30B3;&#x30DE;&#x30F3;&#x30C9;&#x3092;&#x5B9F;&#x884C;&#x3057;&#x3066;&#x3001;&#x5148;&#x7A0B;&#x4F5C;&#x6210;&#x3057;&#x305F;&#x30D6;&#x30E9;&#x30F3;&#x30C1;&#x306B;&#x30C1;&#x30A7;&#x30C3;&#x30AF;&#x30A2;&#x30A6;&#x30C8;&#x3057;&#x3066;&#x304F;&#x3060;&#x3055;&#x3044;&#x3002;</p>
+<pre><code class="lang-bash">git checkout &lt;&#x30D6;&#x30E9;&#x30F3;&#x30C1;&#x540D;&gt;
+git branch  <span class="hljs-comment"># &#x30C1;&#x30A7;&#x30C3;&#x30AF;&#x30A2;&#x30A6;&#x30C8;&#x3067;&#x304D;&#x3066;&#x3044;&#x308B;&#x304B;&#x78BA;&#x8A8D;</span>
+</code></pre>
+<p><strong>&#x3010;&#x3084;&#x308B;&#x3053;&#x3068;16&#x3011;</strong> &#x88AB;&#x308A;&#x305D;&#x3046;&#x306B;&#x306A;&#x3044;&#x540D;&#x524D;&#x3092;&#x3064;&#x3051;&#x305F;&#x30C6;&#x30AD;&#x30B9;&#x30C8;&#x30D5;&#x30A1;&#x30A4;&#x30EB;&#x3092;&#x8FFD;&#x52A0;&#x3057;&#x3066;&#x304F;&#x3060;&#x3055;&#x3044;&#x3002;&#x5185;&#x5BB9;&#x3082;&#x4EFB;&#x305B;&#x307E;&#x3059;&#x3002;</p>
+<p><strong>&#x3010;&#x3084;&#x308B;&#x3053;&#x3068;17&#x3011;</strong> <code>git add &lt;&#x30C6;&#x30AD;&#x30B9;&#x30C8;&#x30D5;&#x30A1;&#x30A4;&#x30EB;&#x540D;&gt;</code> &#x30B3;&#x30DE;&#x30F3;&#x30C9;&#x3067;&#x30B9;&#x30C6;&#x30FC;&#x30B8;&#x3057;&#x305F;&#x5F8C;&#x3001;<code>git commit -m &quot;&lt;&#x597D;&#x304D;&#x306B;&#x3057;&#x3066;OK&gt;&quot;</code> &#x30B3;&#x30DE;&#x30F3;&#x30C9;&#x3067;&#x30B3;&#x30DF;&#x30C3;&#x30C8;&#x3057;&#x3066;&#x304F;&#x3060;&#x3055;&#x3044;&#x3002;</p>
+<p><strong>&#x3010;&#x3084;&#x308B;&#x3053;&#x3068;18&#x3011;</strong> &#x4EE5;&#x4E0B;&#x306E;&#x30B3;&#x30DE;&#x30F3;&#x30C9;&#x3092;&#x5B9F;&#x884C;&#x3057;&#x3066;&#x30D7;&#x30C3;&#x30B7;&#x30E5;&#x3057;&#x3066;&#x304F;&#x3060;&#x3055;&#x3044;&#x3002;</p>
+<pre><code class="lang-bash">git push origin &lt;&#x30D6;&#x30E9;&#x30F3;&#x30C1;&#x540D;&gt;
+</code></pre>
+<p><code>&lt;&#x30D6;&#x30E9;&#x30F3;&#x30C1;&#x540D;&gt;</code> &#x306E;&#x90E8;&#x5206;&#x306B;&#x306F;&#x3001;&#x3010;&#x3084;&#x308B;&#x3053;&#x3068;14&#x3011;&#x306E;&#x3068;&#x304D;&#x3068;&#x540C;&#x3058;&#x3082;&#x306E;&#x3092;&#x5165;&#x529B;&#x3057;&#x3066;&#x304F;&#x3060;&#x3055;&#x3044;&#x3002;</p>
+<p>&#x3053;&#x306E;&#x3088;&#x3046;&#x306B; <code>git push</code> &#x30B3;&#x30DE;&#x30F3;&#x30C9;&#x3067;&#x306F;&#x3001;&#x30EA;&#x30E2;&#x30FC;&#x30C8;&#x30EA;&#x30DD;&#x30B8;&#x30C8;&#x30EA;&#x306E;&#x767B;&#x9332;&#x540D; (&#x3053;&#x3053;&#x3067;&#x306F; <code>origin</code>) &#x3068;&#x30D6;&#x30E9;&#x30F3;&#x30C1;&#x540D;&#x3092;&#x6307;&#x5B9A;&#x3059;&#x308B;&#x3088;&#x3046;&#x306B;&#x306A;&#x3063;&#x3066;&#x3044;&#x307E;&#x3059;&#x3002;</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="9-clone.html" class="navigation navigation-prev " aria-label="Previous page: クローン">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="11-merge.html" class="navigation navigation-next " aria-label="Next page: マージリクエスト / マージ">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"ブランチとチェックアウト","level":"1.11","depth":1,"next":{"title":"マージリクエスト / マージ","level":"1.12","depth":1,"path":"11-merge.md","ref":"11-merge.md","articles":[]},"previous":{"title":"クローン","level":"1.10","depth":1,"path":"9-clone.md","ref":"9-clone.md","articles":[]},"dir":"ltr"},"config":{"plugins":[],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"松本幸大","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"RCC Git 勉強会 2019","gitbook":"*","description":"参考資料"},"file":{"path":"10-branch.md","mtime":"2019-08-05T06:09:53.256Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-08-05T06:11:24.069Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

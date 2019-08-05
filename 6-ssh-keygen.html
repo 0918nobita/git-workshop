@@ -1,0 +1,434 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>SSH 鍵の生成・登録 · RCC Git 勉強会 2019</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="松本幸大">
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="7-prepare-remote.html" />
+    
+    
+    <link rel="prev" href="4-commit.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    はじめに
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="0-env.html">
+            
+                <a href="0-env.html">
+            
+                    
+                    環境構築
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="1-basics.html">
+            
+                <a href="1-basics.html">
+            
+                    
+                    git の基礎知識
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="2-initial-settings.html">
+            
+                <a href="2-initial-settings.html">
+            
+                    
+                    git の初期設定
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="3-init-repo.html">
+            
+                <a href="3-init-repo.html">
+            
+                    
+                    リポジトリの作成
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="4-commit.html">
+            
+                <a href="4-commit.html">
+            
+                    
+                    ステージ / コミット
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.7" data-path="6-ssh-keygen.html">
+            
+                <a href="6-ssh-keygen.html">
+            
+                    
+                    SSH 鍵の生成・登録
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="7-prepare-remote.html">
+            
+                <a href="7-prepare-remote.html">
+            
+                    
+                    リモートリポジトリの作成・登録
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="8-push.html">
+            
+                <a href="8-push.html">
+            
+                    
+                    プッシュ
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="9-clone.html">
+            
+                <a href="9-clone.html">
+            
+                    
+                    クローン
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="10-branch.html">
+            
+                <a href="10-branch.html">
+            
+                    
+                    ブランチとチェックアウト
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="11-merge.html">
+            
+                <a href="11-merge.html">
+            
+                    
+                    マージリクエスト / マージ
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="12-issue.html">
+            
+                <a href="12-issue.html">
+            
+                    
+                    イシュー
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="13-soukai.html">
+            
+                <a href="13-soukai.html">
+            
+                    
+                    総会文章
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >SSH 鍵の生成・登録</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="ssh-&#x9375;&#x306E;&#x751F;&#x6210;&#x30FB;&#x767B;&#x9332;">SSH &#x9375;&#x306E;&#x751F;&#x6210;&#x30FB;&#x767B;&#x9332;</h1>
+<p>&#x4ECA;&#x5F8C; git &#x3092;&#x64CD;&#x4F5C;&#x3057;&#x3066; GitLab &#x5074;&#x306B;&#x30A2;&#x30AF;&#x30BB;&#x30B9;&#x3059;&#x308B;&#x3053;&#x3068;&#x306B;&#x306A;&#x308A;&#x307E;&#x3059;&#x304C;&#x3001;<br>&#x305D;&#x306E;&#x969B;&#x306E;&#x8A8D;&#x53EF;&#x306E;&#x305F;&#x3081;&#x306B; SSH &#x516C;&#x958B;&#x9375; / &#x79D8;&#x5BC6;&#x9375;&#x3092;&#x751F;&#x6210;&#x3057;&#x3001;&#x516C;&#x958B;&#x9375;&#x3092; GitLab &#x5074;&#x306B;&#x8FFD;&#x52A0;&#x3059;&#x308B;&#x5FC5;&#x8981;&#x304C;&#x3042;&#x308A;&#x307E;&#x3059;&#x3002;</p>
+<p><strong>&#x3010;&#x3084;&#x308B;&#x3053;&#x3068;7&#x3011;</strong> &#x30B3;&#x30DE;&#x30F3;&#x30C9;&#x3092;&#x5B9F;&#x884C;&#x3057;&#x3066;&#x3001;SSH &#x306E;&#x516C;&#x958B;&#x9375; / &#x79D8;&#x5BC6;&#x9375;&#x3092;&#x751F;&#x6210;&#x3057;&#x3066;&#x304F;&#x3060;&#x3055;&#x3044;&#x3002;</p>
+<h4 id="windows">Windows</h4>
+<pre><code class="lang-bat">$ <span class="hljs-built_in">cd</span> c:/Users/[&#x30E6;&#x30FC;&#x30B6;&#x30FC;&#x540D;]/
+$ <span class="hljs-built_in">mkdir</span> .ssh
+$ c:/git/bin/ssh-keygen -t rsa
+Generating public/private rsa key pair.
+Enter file <span class="hljs-keyword">in</span> which to save the key (/c/Users/[&#x30E6;&#x30FC;&#x30B6;&#x30FC;&#x540D;]/.ssh/id_rsa): &lt;&#x305D;&#x306E;&#x307E;&#x307E;Enter&#x30AD;&#x30FC;&#x3092;&#x62BC;&#x3059;&gt;
+Enter passphrase (empty <span class="hljs-keyword">for</span> no passphrase): &lt;&#x30D1;&#x30B9;&#x30EF;&#x30FC;&#x30C9;&#x3092;&#x8003;&#x3048;&#x3066;&#x5165;&#x529B;&#x3059;&#x308B;&gt;
+Enter same passphrase again: &lt;&#x3082;&#x3046;<span class="hljs-number">1</span>&#x5EA6;&#x30D1;&#x30B9;&#x30EF;&#x30FC;&#x30C9;&#x3092;&#x5165;&#x529B;&#x3059;&#x308B;&gt;
+Your identification has been saved <span class="hljs-keyword">in</span> c:/Users/[&#x30E6;&#x30FC;&#x30B6;&#x30FC;&#x540D;]/.ssh/id_rsa.
+Your public key has been saved <span class="hljs-keyword">in</span> c:/Users/[&#x30E6;&#x30FC;&#x30B6;&#x30FC;&#x540D;]/.ssh/id_rsa.pub.
+The key fingerprint is:
+~~~~
+</code></pre>
+<h4 id="macos--linux">macOS / Linux</h4>
+<pre><code class="lang-bash">$ ssh-keygen -t rsa
+Generating public/private rsa key pair.
+Enter file <span class="hljs-keyword">in</span> <span class="hljs-built_in">which</span> to save the key (/Users/[&#x30E6;&#x30FC;&#x30B6;&#x30FC;&#x540D;]/.ssh/id_rsa): &lt;&#x305D;&#x306E;&#x307E;&#x307E;Enter&#x30AD;&#x30FC;&#x3092;&#x62BC;&#x3059;&gt;
+Enter passphrase (empty <span class="hljs-keyword">for</span> no passphrase): &lt;&#x30D1;&#x30B9;&#x30EF;&#x30FC;&#x30C9;&#x3092;&#x8003;&#x3048;&#x3066;&#x5165;&#x529B;&#x3059;&#x308B;&gt;
+Enter same passphrase again: &lt;&#x3082;&#x3046;1&#x5EA6;&#x30D1;&#x30B9;&#x30EF;&#x30FC;&#x30C9;&#x3092;&#x5165;&#x529B;&#x3059;&#x308B;&gt;
+Your identification has been saved <span class="hljs-keyword">in</span> /Users/[&#x30E6;&#x30FC;&#x30B6;&#x30FC;&#x540D;]/.ssh/id_rsa.
+Your public key has been saved <span class="hljs-keyword">in</span> /Users/[&#x30E6;&#x30FC;&#x30B6;&#x30FC;&#x540D;]/.ssh/id_rsa.pub.
+The key fingerprint is:
+~~~~
+</code></pre>
+<h3 id="&#x516C;&#x958B;&#x9375;&#x3092;-gitlab-&#x306B;&#x767B;&#x9332;&#x3059;&#x308B;">&#x516C;&#x958B;&#x9375;&#x3092; GitLab &#x306B;&#x767B;&#x9332;&#x3059;&#x308B;</h3>
+<p>&#x5148;&#x7A0B;&#x751F;&#x6210;&#x3057;&#x305F; <code>id_rsa.pub</code> &#x306E;&#x5185;&#x5BB9;&#x3092;&#x30AF;&#x30EA;&#x30C3;&#x30D7;&#x30DC;&#x30FC;&#x30C9;&#x306B;&#x30B3;&#x30D4;&#x30FC;&#x3057;&#x3066;&#x304A;&#x3044;&#x3066;&#x8CBC;&#x308A;&#x4ED8;&#x3051;&#x3066;&#x304F;&#x3060;&#x3055;&#x3044;&#x3002;</p>
+<p>Windows &#x306E;&#x5834;&#x5408;&#x3001;&#x30B3;&#x30DE;&#x30F3;&#x30C9;&#x30D7;&#x30ED;&#x30F3;&#x30D7;&#x30C8;&#x4E0A;&#x3067; <code>clip &lt; c:/Users/[&#x30E6;&#x30FC;&#x30B6;&#x30FC;&#x540D;]/.ssh/id_rsa.pub</code> &#x3092;&#x5B9F;&#x884C;&#x3059;&#x308B;&#x3068;&#x30B3;&#x30D4;&#x30FC;&#x3067;&#x304D;&#x307E;&#x3059;&#x3002;<br>macOS &#x306E;&#x5834;&#x5408;&#x3001;&#x30BF;&#x30FC;&#x30DF;&#x30CA;&#x30EB;&#x4E0A;&#x3067; <code>cat ~/.ssh/id_rsa.pub | pbcopy</code> &#x3092;&#x5B9F;&#x884C;&#x3059;&#x308B;&#x3068;&#x30B3;&#x30D4;&#x30FC;&#x3067;&#x304D;&#x307E;&#x3059;&#x3002;</p>
+<p>&#x3042;&#x3068;&#x306F;&#x4EE5;&#x4E0B;&#x306E;&#x901A;&#x308A;&#x3067;&#x3059;&#x3002;</p>
+<p><img src="media/ssh-key.jpg" alt="SSH&#x9375;&#x306E;&#x8A2D;&#x5B9A;&#x753B;&#x9762;"></p>
+<h3 id="&#x53C2;&#x8003;&#x6587;&#x732E;">&#x53C2;&#x8003;&#x6587;&#x732E;</h3>
+<ul>
+<li><a href="http://webdev.jp.net/ssh-keygen-egit-windows/" target="_blank">Windows&#x3067;ssh-keygen&#x304B;&#x3089;&#x79D8;&#x5BC6;&#x9375;&#x3068;&#x516C;&#x958B;&#x9375;&#x3092;&#x3064;&#x304F;&#x308B;</a></li>
+</ul>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="4-commit.html" class="navigation navigation-prev " aria-label="Previous page: ステージ / コミット">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="7-prepare-remote.html" class="navigation navigation-next " aria-label="Next page: リモートリポジトリの作成・登録">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"SSH 鍵の生成・登録","level":"1.7","depth":1,"next":{"title":"リモートリポジトリの作成・登録","level":"1.8","depth":1,"path":"7-prepare-remote.md","ref":"7-prepare-remote.md","articles":[]},"previous":{"title":"ステージ / コミット","level":"1.6","depth":1,"path":"4-commit.md","ref":"4-commit.md","articles":[]},"dir":"ltr"},"config":{"plugins":[],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"松本幸大","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"RCC Git 勉強会 2019","gitbook":"*","description":"参考資料"},"file":{"path":"6-ssh-keygen.md","mtime":"2019-08-05T06:09:53.256Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-08-05T06:11:24.069Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

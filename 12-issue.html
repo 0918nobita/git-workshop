@@ -1,0 +1,402 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>イシュー · RCC Git 勉強会 2019</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="松本幸大">
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="13-soukai.html" />
+    
+    
+    <link rel="prev" href="11-merge.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    はじめに
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="0-env.html">
+            
+                <a href="0-env.html">
+            
+                    
+                    環境構築
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="1-basics.html">
+            
+                <a href="1-basics.html">
+            
+                    
+                    git の基礎知識
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="2-initial-settings.html">
+            
+                <a href="2-initial-settings.html">
+            
+                    
+                    git の初期設定
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="3-init-repo.html">
+            
+                <a href="3-init-repo.html">
+            
+                    
+                    リポジトリの作成
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="4-commit.html">
+            
+                <a href="4-commit.html">
+            
+                    
+                    ステージ / コミット
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="6-ssh-keygen.html">
+            
+                <a href="6-ssh-keygen.html">
+            
+                    
+                    SSH 鍵の生成・登録
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="7-prepare-remote.html">
+            
+                <a href="7-prepare-remote.html">
+            
+                    
+                    リモートリポジトリの作成・登録
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="8-push.html">
+            
+                <a href="8-push.html">
+            
+                    
+                    プッシュ
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="9-clone.html">
+            
+                <a href="9-clone.html">
+            
+                    
+                    クローン
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="10-branch.html">
+            
+                <a href="10-branch.html">
+            
+                    
+                    ブランチとチェックアウト
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="11-merge.html">
+            
+                <a href="11-merge.html">
+            
+                    
+                    マージリクエスト / マージ
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.13" data-path="12-issue.html">
+            
+                <a href="12-issue.html">
+            
+                    
+                    イシュー
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="13-soukai.html">
+            
+                <a href="13-soukai.html">
+            
+                    
+                    総会文章
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >イシュー</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="&#x30A4;&#x30B7;&#x30E5;&#x30FC;">&#x30A4;&#x30B7;&#x30E5;&#x30FC;</h1>
+<p>issue &#x306F;&#x76F4;&#x8A33;&#x3059;&#x308B;&#x3068;&#x300C;&#x8B70;&#x8AD6;&#x3059;&#x3079;&#x304D;&#x91CD;&#x8981;&#x306A;&#x8A71;&#x984C;&#x30FB;&#x8AD6;&#x70B9;&#x30FB;&#x4E89;&#x70B9;&#x300D;&#x300C;&#x95A2;&#x5FC3;&#x4E8B;&#x300D;&#x3042;&#x305F;&#x308A;&#x306B;&#x306A;&#x308A;&#x307E;&#x3059;&#x3002;</p>
+<p>Git &#x30DB;&#x30B9;&#x30C6;&#x30A3;&#x30F3;&#x30B0;&#x30B5;&#x30FC;&#x30D3;&#x30B9;&#x306E;&#x30A4;&#x30B7;&#x30E5;&#x30FC;&#x6A5F;&#x80FD; (= GitLab &#x3067;&#x306E;&#x300C;&#x8AB2;&#x984C;&#x300D;) &#x306F;&#x3001;&#x4ED5;&#x69D8;&#x306E;&#x6574;&#x7406;&#x3084;&#x30BF;&#x30B9;&#x30AF;&#x7BA1;&#x7406;&#x306E;&#x305F;&#x3081;&#x306B;&#x7528;&#x3044;&#x3089;&#x308C;&#x307E;&#x3059;&#x3002;</p>
+<p>&#x30BF;&#x30A4;&#x30C8;&#x30EB;&#x30FB;&#x672C;&#x6587;&#x30FB;&#x62C5;&#x5F53;&#x8005;&#x3092;&#x8A2D;&#x5B9A;&#x3057;&#x305F;&#x4E0A;&#x3067;&#x9001;&#x4FE1;&#x3067;&#x304D;&#x3001;&#x30B3;&#x30E1;&#x30F3;&#x30C8;&#x6B04;&#x3067;&#x8B70;&#x8AD6;&#x3092;&#x7D9A;&#x3051;&#x308B;&#x3053;&#x3068;&#x304C;&#x3067;&#x304D;&#x307E;&#x3059;&#x3002;</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="11-merge.html" class="navigation navigation-prev " aria-label="Previous page: マージリクエスト / マージ">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="13-soukai.html" class="navigation navigation-next " aria-label="Next page: 総会文章">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"イシュー","level":"1.13","depth":1,"next":{"title":"総会文章","level":"1.14","depth":1,"path":"13-soukai.md","ref":"13-soukai.md","articles":[]},"previous":{"title":"マージリクエスト / マージ","level":"1.12","depth":1,"path":"11-merge.md","ref":"11-merge.md","articles":[]},"dir":"ltr"},"config":{"plugins":[],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"松本幸大","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"RCC Git 勉強会 2019","gitbook":"*","description":"参考資料"},"file":{"path":"12-issue.md","mtime":"2019-08-05T06:09:53.256Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-08-05T06:11:24.069Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
