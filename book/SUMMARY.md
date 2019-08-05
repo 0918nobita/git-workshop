@@ -10,3 +10,7 @@
 * [リモートリポジトリの作成・登録](7-prepare-remote.md)
 * [プッシュ](8-push.md)
 * [クローン](9-clone.md)
+* [ブランチとチェックアウト](10-branch.md)
+* [マージリクエスト / マージ](11-merge.md)
+* [イシュー](12-issue.md)
+* [総会文書](13-soukai.md)
