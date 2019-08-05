@@ -31,3 +31,4 @@
 * ``git add -p`` コマンドで部分的にコミットする https://qiita.com/cotton_desu/items/bf08ac57d59b37dd5188
 * ``git rebase -i`` コマンドで複数のコミットをまとめる https://qiita.com/tatetate55/items/7a822a3246df79d693b8
 * ``git stash`` コマンドで変更差分をコミットせずに一時退避する https://qiita.com/keisuke0508/items/4ad7caf544b1ad631fd7
+* GPG を用いて署名付きでコミットする https://qiita.com/ykgeek/items/98ecfd0f3e22cea7eb10
