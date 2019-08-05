@@ -7,5 +7,5 @@
 * [リポジトリの作成](3-init-repo.md)
 * [ステージ / コミット](4-commit.md)
 * [SSH 鍵の生成・登録](6-ssh-keygen.md)
-* [リモートリポジトリの作成](7-prepare-remote.md)
+* [リモートリポジトリの作成・登録](7-prepare-remote.md)
 * [プッシュ](8-push.md)

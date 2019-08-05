@@ -41,6 +41,10 @@ Host github.com
   AddKeysToAgent yes
 ```
 
+**【やること11】** GitLab で作成したリモートリポジトリのページまで行き、正しくプッシュできていることを確認してください。
+
+![プッシュに成功したリモートリポジトリの画面](./media/push-successful.png)
+
 ### 参考文献
 
 https://obel.hatenablog.jp/entry/20180104/1515055969
