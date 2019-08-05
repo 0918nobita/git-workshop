@@ -9,3 +9,4 @@
 * [SSH 鍵の生成・登録](6-ssh-keygen.md)
 * [リモートリポジトリの作成・登録](7-prepare-remote.md)
 * [プッシュ](8-push.md)
+* [クローン](9-clone.md)
