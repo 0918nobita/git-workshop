@@ -12,8 +12,35 @@
 git push origin master
 ```
 
-※ パスワードが要求されますが、SSH 鍵を生成するときに入力したパスワードを入力してください。
+## 毎回パスワードが要求される場合の対応策
 
-ローカルでパスワードを記憶しておきパスワードの入力を自動化する方法がありますが、環境によって異なります。
+``~/.ssh/config`` に設定を追記することで解決するようです。
+
+秘密鍵のパス (ここでは ``~/.ssh/id_rsa``) については、環境ごとに適切なパスを指定してください。
+
+### macOS の場合
+
+```bash
+Host github.com
+  HostName github.com
+  Port 22
+  User git
+  IdentityFile ~/.ssh/id_rsa
+  AddKeysToAgent yes
+  UseKeychain yes
+```
+
+### Linux の場合
+
+```bash
+Host github.com
+  HostName github.com
+  Port 22
+  User git
+  IdentityFile ~/.ssh/id_rsa
+  AddKeysToAgent yes
+```
+
+### 参考文献
 
 https://obel.hatenablog.jp/entry/20180104/1515055969
