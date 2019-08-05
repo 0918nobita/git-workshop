@@ -1,5 +1,7 @@
 # RCC Git 勉強会 2019
 
+![Git Logo](https://git-scm.com/images/logos/downloads/Git-Logo-2Color.png)
+
 ### 参加準備
 
 - 持参する PC に git を導入する (導入方法については [環境構築](0-env.md) を参照)
