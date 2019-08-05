@@ -21,3 +21,5 @@ git remote add origin git@gitlab.com:<ユーザ名>/practice.git
 ``git remote`` はリモートリポジトリをローカルで管理するためのコマンドです。
 
 ``add`` だけでなく ``set-url`` (URLの更新) や ``rename`` (登録名の変更) など、様々なサブコマンドが利用できます。詳しくは ``git remote --help`` で表示されるヘルプを参照してください。
+
+参考になりそうな記事: [基本的な Git コマンドまとめ #remote](https://qiita.com/2m1tsu3/items/6d49374230afab251337#remote)
